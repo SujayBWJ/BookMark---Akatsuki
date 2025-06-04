@@ -1,76 +1,199 @@
 <!DOCTYPE html>
+<!-- This declares the document type as HTML5, which is the latest standard -->
+
 <html lang="en">
+<!-- Opening HTML tag with language attribute set to English for accessibility and SEO -->
+
   <head>
+  <!-- Head section contains metadata and resources that aren't displayed on the page -->
+
     <meta charset="UTF-8" />
+    <!-- Sets the character encoding to UTF-8, which supports all Unicode characters -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Makes the page responsive by setting viewport width to device width and initial zoom to 100% -->
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+    <!-- Links to Font Awesome CSS library from CDN to use social media icons -->
+
     <link rel="stylesheet" href="login.css" />
-    <title>Login</title>
+    <!-- Links to external CSS file named "login.css" for custom styling -->
+
+    <title>Login Page</title>
+    <!-- Sets the page title that appears in browser tab -->
+
   </head>
+  <!-- Closing head tag -->
 
   <body>
+  <!-- Opening body tag - contains all visible content -->
+
     <div class="container" id="container">
+    <!-- Main container div with CSS class "container" and ID "container" for styling and JavaScript targeting -->
+
       <div class="form-container sign-up">
+      <!-- Container for the sign-up form with CSS classes for styling -->
+
         <form>
+        <!-- Opening form tag for the sign-up form (no action or method specified) -->
+
           <h1>Create Account</h1>
+          <!-- Main heading for the sign-up form -->
+
           <div class="social-icons">
+          <!-- Container div for social media login icons -->
+
             <a href="#" class="icon"
+            <!-- Anchor tag for Google Plus login with CSS class "icon" and placeholder href -->
               ><i class="fa-brands fa-google-plus-g"></i
             ></a>
+            <!-- Font Awesome icon for Google Plus, closing anchor tag -->
+
             <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <!-- Anchor tag with Facebook icon -->
+
             <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+            <!-- Anchor tag with GitHub icon -->
+
             <a href="#" class="icon"
+            <!-- Anchor tag for LinkedIn login -->
               ><i class="fa-brands fa-linkedin-in"></i
             ></a>
+            <!-- Font Awesome LinkedIn icon, closing anchor tag -->
+
           </div>
+          <!-- Closing div for social-icons container -->
+
           <span>or use your email for registeration</span>
+          <!-- Text span explaining alternative registration method (note: "registeration" is misspelled) -->
+
           <input type="text" placeholder="Name" />
+          <!-- Text input field for user's name with placeholder text -->
+
           <input type="email" placeholder="Email" />
+          <!-- Email input field with built-in email validation and placeholder -->
+
           <input type="password" placeholder="Password" />
+          <!-- Password input field that masks entered text -->
+
           <button>Sign Up</button>
+          <!-- Submit button for the sign-up form -->
+
         </form>
+        <!-- Closing form tag for sign-up -->
+
       </div>
+      <!-- Closing div for sign-up form container -->
+
       <div class="form-container sign-in">
+      <!-- Container for the sign-in form with CSS classes -->
+
         <form>
+        <!-- Opening form tag for the sign-in form -->
+
           <h1>Sign In</h1>
+          <!-- Main heading for the sign-in form -->
+
           <div class="social-icons">
+          <!-- Container div for social media login icons (duplicate of above) -->
+
             <a href="#" class="icon"
+            <!-- Google Plus login link -->
               ><i class="fa-brands fa-google-plus-g"></i
             ></a>
+            <!-- Google Plus icon -->
+
             <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <!-- Facebook login link and icon -->
+
             <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+            <!-- GitHub login link and icon -->
+
             <a href="#" class="icon"
+            <!-- LinkedIn login link  -->
               ><i class="fa-brands fa-linkedin-in"></i
             ></a>
+            <!-- LinkedIn icon -->
+
           </div>
+          <!-- Closing social-icons container -->
+
           <span>or use your email password</span>
+          <!-- Text explaining alternative login method -->
+
           <input type="email" placeholder="Email" />
+          <!-- Email input field for login -->
+
           <input type="password" placeholder="Password" />
+          <!-- Password input field for login -->
+
           <a href="#">Forget Your Password?</a>
+          <!-- Link for password recovery (placeholder href) -->
+
           <button class="signin">Sign In</button>
+          <!-- Submit button for sign-in form with CSS class "signin" -->
+
         </form>
+        <!-- Closing form tag for sign-in -->
+
       </div>
+      <!-- Closing div for sign-in form container -->
+
       <div class="toggle-container">
+      <!-- Container for the toggle panel that switches between sign-in and sign-up -->
+
         <div class="toggle">
+        <!-- Inner toggle div for styling the sliding panel -->
+
           <div class="toggle-panel toggle-left">
+          <!-- Left toggle panel (appears when sign-up is active) -->
+
             <h1>Welcome Back!</h1>
+            <!-- Heading for returning users -->
+
             <p>Enter your personal details to use all of site features</p>
+            <!-- Description text encouraging login -->
+
             <button class="hidden" id="login">Sign In</button>
+            <!-- Button to switch to sign-in form, with CSS class "hidden" and ID "login" for JavaScript -->
+
           </div>
+          <!-- Closing left toggle panel -->
+
           <div class="toggle-panel toggle-right">
+          <!-- Right toggle panel (appears when sign-in is active) -->
+
             <h1>Hello, Friend!</h1>
+            <!-- Greeting heading for new users -->
+
             <p>
               Register with your personal details to use all of site features
             </p>
+            <!-- Description text encouraging registration -->
+
             <button class="hidden" id="register">Sign Up</button>
+            <!-- Button to switch to sign-up form, with CSS class "hidden" and ID "register" for JavaScript -->
+
           </div>
+          <!-- Closing right toggle panel -->
+
         </div>
+        <!-- Closing toggle div -->
+
       </div>
+      <!-- Closing toggle-container div -->
+
     </div>
+    <!-- Closing main container div -->
 
     <script src="login.js"></script>
+    <!-- Links to external JavaScript file "login.js" for interactive functionality -->
+
   </body>
+  <!-- Closing body tag -->
+
 </html>
+<!-- Closing HTML tag -->
