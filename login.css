@@ -31,7 +31,7 @@ body {
   position: relative; /* Enable positioning for child elements */
   overflow: hidden; /* Hide content that extends beyond container boundaries */
   width: 110vw; /* Set width to 110% of viewport width */
-  max-width: 1700px;
+  max-width: 1700px; /* Would limit maximum width */
   height: 100vh; /* Set height to full viewport height */
 }
 
