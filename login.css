@@ -22,9 +22,9 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
   position: relative;
   overflow: hidden;
-  width: 768px;
-  max-width: 100%;
-  min-height: 480px;
+ width: 110vw;
+  max-width: 1700px;
+  height: 90vh;
 }
 
 /* Typography */
