@@ -1,233 +1,492 @@
 <!DOCTYPE html>
+<!-- This declares the document type as HTML5, which is the latest standard -->
+
 <html lang="en">
+<!-- Opening HTML tag with language attribute set to English for accessibility and SEO -->
+
   <head>
+  <!-- Head section contains metadata and resources that aren't displayed on the page -->
+
     <meta charset="UTF-8" />
+    <!-- Sets the character encoding to UTF-8, which supports all Unicode characters -->
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Forces Internet Explorer to use the latest rendering engine available -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Makes the page responsive by setting viewport width to device width and initial zoom to 100% -->
+
     <title>Complete Responsive Landing Page Website Design</title>
+    <!-- Sets the page title that appears in browser tab and search results -->
+
     <link rel="stylesheet" href="style.css" />
+    <!-- Links to external CSS file named "style.css" for custom styling -->
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
+    <!-- Links to Font Awesome CSS library from CDN for icons (version 5.15.4) -->
+
   </head>
+  <!-- Closing head tag -->
 
   <body>
+  <!-- Opening body tag - contains all visible content -->
+
+    <!-- HTML comment explaining the start of navbar section -->
     <!-- navbar sections starts  -->
+
     <header class="header">
+    <!-- Header element with CSS class "header" for the navigation bar -->
+
       <div class="logo">
+      <!-- Container div for the website logo -->
+
         <img src="logo-bookmark.svg" alt="logo-bookmark" />
+        <!-- Image element displaying the bookmark logo from SVG file with alt text for accessibility -->
+
       </div>
+      <!-- Closing logo container div -->
 
       <nav class="navbar">
+      <!-- Navigation element with CSS class "navbar" containing main navigation links -->
+
         <a href="#home">Home</a>
+        <!-- Anchor link to home section using fragment identifier -->
+
         <a href="#features">Features</a>
+        <!-- Anchor link to features section using fragment identifier -->
+
         <a href="#download">Download</a>
+        <!-- Anchor link to download section using fragment identifier -->
+
         <a href="#footer">Contact</a>
+        <!-- Anchor link to footer section (labeled as Contact) using fragment identifier -->
+
         <a href="login.html" class="btn">Log in</a>
+        <!-- Anchor link to external login.html page with CSS class "btn" for button styling -->
+
       </nav>
+      <!-- Closing navigation element -->
 
       <div class="fas fa-bars" id="menu-btn"></div>
+      <!-- Div element with Font Awesome hamburger menu icon classes and ID for mobile menu toggle -->
+
     </header>
+    <!-- Closing header element -->
+
+    <!-- HTML comment explaining the end of navbar section -->
     <!-- navbar sections starts  -->
 
+    <!-- HTML comment explaining the start of home section -->
     <!-- home section stars  -->
 
     <section class="home" id="home">
+    <!-- Section element with CSS class "home" and ID "home" for the hero/landing area -->
+
       <div class="content">
+      <!-- Container div for the text content in home section -->
+
         <h1>Simple <span class="bm">Bookmark</span> Manager</h1>
+        <!-- Main heading with "Bookmark" wrapped in span with CSS class "bm" for special styling -->
+
         <p>
           A clean and simple interface to organize your favorite websites. open
           a browser tab and see your sites load instantly. try it for free!!
         </p>
+        <!-- Paragraph describing the bookmark manager's features and benefits -->
 
         <a href="#" class="home-btn">get it on chrome</a>
+        <!-- Call-to-action button link with CSS class "home-btn" and placeholder href -->
+
       </div>
+      <!-- Closing content container div -->
 
       <div class="image">
-        <img src="illustration-hero.svg" alt="illustration-hero" />
-      </div>
-    </section>
+      <!-- Container div for the hero image -->
 
+        <img src="illustration-hero.svg" alt="illustration-hero" />
+        <!-- Hero illustration image from SVG file with descriptive alt text -->
+
+      </div>
+      <!-- Closing image container div -->
+
+    </section>
+    <!-- Closing home section -->
+
+    <!-- HTML comment explaining the end of home section -->
     <!-- home section ends -->
 
+    <!-- HTML comment explaining the start of features section -->
     <!-- features sectin starts  -->
 
     <section class="features" id="features">
+    <!-- Section element with CSS class "features" and ID "features" for the features showcase -->
+
       <div class="heading">
+      <!-- Container div for the section heading -->
+
         <h1>Features</h1>
+        <!-- Main heading for the features section -->
+
         <p>
           Our aim is to make it quick and easy for you to access your favorite
           websites. your bookmarks sync between your devices so you can access
           them on the go
         </p>
+        <!-- Paragraph explaining the overall features and benefits -->
+
       </div>
+      <!-- Closing heading container div -->
 
       <div class="row">
+      <!-- Container div for organizing feature items in rows -->
+
+        <!-- HTML comment identifying the first feature tab -->
         <!-- 1 Tab  -->
+
         <div class="image">
+        <!-- Image container for first feature -->
+
           <img
             src="illustration-features-tab-1.svg"
             alt="illustration-features-tab-1"
           />
+          <!-- Illustration for first feature from SVG file -->
+
         </div>
+        <!-- Closing image container -->
 
         <div class="content">
+        <!-- Content container for first feature -->
+
           <h1>Bookmark in one click</h1>
+          <!-- Heading for first feature -->
+
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi sint
             odit tempora, maiores quos qui quisquam accusamus ad officiis
             sapiente.
           </p>
-          <a href="#" class="all-btn">more info</a>
-        </div>
+          <!-- Lorem ipsum placeholder text describing the feature -->
 
+          <a href="#" class="all-btn">more info</a>
+          <!-- Button link to get more information with CSS class "all-btn" -->
+
+        </div>
+        <!-- Closing content container -->
+
+        <!-- HTML comment marking end of first feature tab -->
         <!-- 1 Tab  -->
 
+        <!-- HTML comment identifying the second feature tab -->
         <!-- 2 Tab  -->
+
         <div class="content">
+        <!-- Content container for second feature (note: content comes before image for layout variation) -->
+
           <h1>Intelligent search</h1>
+          <!-- Heading for second feature -->
+
           <p>
             Our powerful search feature will help you find saved sites in no
             time at all. No need to trawl through all of your bookmarks.
           </p>
+          <!-- Description of the intelligent search functionality -->
+
           <a href="#" class="all-btn">more info</a>
+          <!-- More info button link -->
+
         </div>
+        <!-- Closing content container -->
 
         <div class="image">
+        <!-- Image container for second feature -->
+
           <img
             src="illustration-features-tab-2.svg"
             alt="illustration-features-tab-2"
           />
-        </div>
+          <!-- Illustration for second feature -->
 
+        </div>
+        <!-- Closing image container -->
+
+        <!-- HTML comment marking end of second feature tab -->
         <!-- 2 Tab  -->
 
         <div class="image">
+        <!-- Image container for third feature -->
+
           <img
             src="illustration-features-tab-3.svg"
             alt="illustration-features-tab-3"
           />
+          <!-- Illustration for third feature -->
+
         </div>
+        <!-- Closing image container -->
 
         <div class="content">
+        <!-- Content container for third feature -->
+
           <h1>Share your bookmarks</h1>
+          <!-- Heading for third feature -->
+
           <p>
             Easily share your bookmarks and collections with others. Create a
             shareable link that you can send at the click of a button.
           </p>
+          <!-- Description of bookmark sharing functionality -->
+
           <a href="#" class="all-btn">more info</a>
+          <!-- More info button link -->
+
         </div>
+        <!-- Closing content container -->
 
+        <!-- HTML comment identifying the third feature tab -->
         <!-- 3 Tab  -->
-      </div>
-    </section>
 
+      </div>
+      <!-- Closing row container -->
+
+    </section>
+    <!-- Closing features section -->
+
+    <!-- HTML comment explaining the end of features section -->
     <!-- features sectin ends -->
 
+    <!-- HTML comment explaining the start of downloads section -->
     <!-- downloads section starts  -->
 
     <section class="download" id="download">
+    <!-- Section element with CSS class "download" and ID "download" for browser extension downloads -->
+
       <div class="heading">
+      <!-- Container div for the section heading -->
+
         <h1>Download Extension</h1>
+        <!-- Main heading for download section -->
+
         <p>
           We've got more browsers in the pipeline. Please do le us know if you
           got've got a favorite you'd like us to prioritize
         </p>
+        <!-- Paragraph about future browser support (contains typos: "le us" and "got've got") -->
+
       </div>
+      <!-- Closing heading container -->
 
       <div class="box-container">
+      <!-- Container div using CSS grid layout for download boxes -->
+
         <div class="box">
+        <!-- Individual download box for Chrome extension -->
+
           <img src="logo-chrome.svg" alt="logo-chrome" />
+          <!-- Chrome browser logo image -->
 
           <h3>Add to Chrome</h3>
+          <!-- Heading for Chrome extension -->
+
           <p>Minimum Version 63</p>
+          <!-- Minimum required Chrome version -->
+
           <a href="#" class="all-btn">install</a>
+          <!-- Install button link -->
+
         </div>
+        <!-- Closing Chrome box -->
 
         <div class="box">
+        <!-- Individual download box for Firefox extension -->
+
           <img src="logo-firefox.svg" alt="logo-firefox" />
+          <!-- Firefox browser logo image -->
 
           <h3>Add to Firefox</h3>
+          <!-- Heading for Firefox extension -->
+
           <p>Minimum Version 55</p>
+          <!-- Minimum required Firefox version -->
+
           <a href="#" class="all-btn">install</a>
+          <!-- Install button link -->
+
         </div>
+        <!-- Closing Firefox box -->
 
         <div class="box">
+        <!-- Individual download box for Opera extension -->
+
           <img src="logo-opera.svg" alt="logo-opera" />
+          <!-- Opera browser logo image -->
 
           <h3>Add to Opera</h3>
-          <p>Minimum Version 46</p>
-          <a href="#" class="all-btn">install</a>
-        </div>
-      </div>
-    </section>
+          <!-- Heading for Opera extension -->
 
+          <p>Minimum Version 46</p>
+          <!-- Minimum required Opera version -->
+
+          <a href="#" class="all-btn">install</a>
+          <!-- Install button link -->
+
+        </div>
+        <!-- Closing Opera box -->
+
+      </div>
+      <!-- Closing box container -->
+
+    </section>
+    <!-- Closing download section -->
+
+    <!-- HTML comment explaining the end of downloads section -->
     <!-- downloads section ends -->
 
+    <!-- HTML comment explaining the start of footer section -->
     <!-- footer section starts  -->
 
     <section class="footer" id="footer">
+    <!-- Footer section with CSS class "footer" and ID "footer" -->
+
       <div class="box-container">
-        <div class="box">
-          <h3>quick links</h3>
-          <a href="#home"><i class="fas fa-chevron-right"></i>home</a>
-          <a href="#features"><i class="fas fa-chevron-right"></i>features</a>
-          <a href="#download"><i class="fas fa-chevron-right"></i>download</a>
-          <a href="#contact"><i class="fas fa-chevron-right"></i>contact</a>
-        </div>
+      <!-- Container div for footer content boxes using CSS grid -->
 
         <div class="box">
+        <!-- First footer box for quick navigation links -->
+
+          <h3>quick links</h3>
+          <!-- Heading for quick links section -->
+
+          <a href="#home"><i class="fas fa-chevron-right"></i>home</a>
+          <!-- Link to home section with Font Awesome chevron right icon -->
+
+          <a href="#features"><i class="fas fa-chevron-right"></i>features</a>
+          <!-- Link to features section with chevron icon -->
+
+          <a href="#download"><i class="fas fa-chevron-right"></i>download</a>
+          <!-- Link to download section with chevron icon -->
+
+          <a href="#contact"><i class="fas fa-chevron-right"></i>contact</a>
+          <!-- Link to contact section with chevron icon -->
+
+        </div>
+        <!-- Closing quick links box -->
+
+        <div class="box">
+        <!-- Second footer box for services -->
+
           <h3>our services</h3>
+          <!-- Heading for services section -->
+
           <a href="#"><i class="fas fa-chevron-right"></i>bookmark extension</a>
+          <!-- Service link with chevron icon -->
+
           <a href="#"><i class="fas fa-chevron-right"></i>chrome themes</a>
+          <!-- Service link with chevron icon -->
+
           <a href="#"><i class="fas fa-chevron-right"></i>firefox themes</a>
+          <!-- Service link with chevron icon -->
+
           <a href="#"
             ><i class="fas fa-chevron-right"></i>screen recorder extension</a
           >
+          <!-- Service link with chevron icon (note: link spans multiple lines) -->
+
           <a href="#"
             ><i class="fas fa-chevron-right"></i>screen shot extension</a
           >
+          <!-- Service link with chevron icon (note: link spans multiple lines) -->
+
         </div>
+        <!-- Closing services box -->
 
         <div class="box">
+        <!-- Third footer box for contact information -->
+
           <h3>contact info</h3>
+          <!-- Heading for contact information section -->
+
           <a href="#"><i class="fas fa-phone"></i>+91 6360 228 540</a>
+          <!-- Phone number link with phone icon -->
+
           <a href="#"><i class="fas fa-phone"></i>+91 7795 746 849</a>
-          <a href="#"><i class="fas fa-envelope"></i>sujaybharadwaj.dev.@gmail.com</a>
-          <a href="#"><i class="fas fa-envelope"></i>pranavrkoushik@gmail.com</a>
+          <!-- Second phone number link with phone icon -->
+
+          <a href="#"
+            ><i class="fas fa-envelope"></i>sujaybharadwaj.dev@gmail.com</a
+          >
+          <!-- Email link with envelope icon (spans multiple lines) -->
+
+          <a href="#"
+            ><i class="fas fa-envelope"></i>pranavrkoushik.@gmail.com</a
+          >
+          <!-- Second email link with envelope icon (spans multiple lines) -->
+
           <a href="#"
             ><i class="fas fa-map-marker-alt"></i>Mandya, india - 571401</a
           >
+          <!-- Address link with map marker icon (spans multiple lines) -->
+
         </div>
+        <!-- Closing contact info box -->
 
         <div class="box">
+        <!-- Fourth footer box for social media links -->
+
           <h3>follow us</h3>
+          <!-- Heading for social media section -->
+
           <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+          <!-- Facebook link with Facebook icon -->
+
           <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+          <!-- Twitter link with Twitter icon -->
+
           <a href="https://www.instagram.com/mr_ameen.99/"
             ><i class="fab fa-instagram"></i>instagram</a
           >
+          <!-- Instagram link with actual URL and Instagram icon (spans multiple lines) -->
+
           <a
             href="www.linkedin.com/in/sujbwj
 
 "
             ><i class="fab fa-linkedin"></i>linkedin</a
           >
+          <!-- LinkedIn link with incomplete URL and line breaks (spans multiple lines with formatting issues) -->
+
           <a href="#"><i class="fab fa-pinterest"></i>pinterest</a>
+          <!-- Pinterest link with Pinterest icon -->
+
         </div>
+        <!-- Closing social media box -->
+
       </div>
+      <!-- Closing footer box container -->
 
       <div class="credit">
+      <!-- Container div for footer credit/copyright information -->
+
         created by <span>Akatsuki</span> | all rights reserved
+        <!-- Credit text with "Akatsuki" wrapped in span for special styling -->
+
       </div>
+      <!-- Closing credit container -->
+
     </section>
+    <!-- Closing footer section -->
 
-
-
+    <!-- HTML comment explaining the end of footer section -->
     <!-- footer section ends -->
 
     <script src="js/main.js"></script>
+    <!-- Links to external JavaScript file located in js folder for interactive functionality -->
+
   </body>
+  <!-- Closing body tag -->
+
 </html>
+<!-- Closing HTML tag -->
