@@ -4,7 +4,7 @@
 /* Universal selector - applies to all elements on the page */
 * {
   /* Set font family to Poppins with fallback to generic sans-serif */
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif; 
   /* Remove default margin from all elements */
   margin: 0;
   /* Remove default padding from all elements */
