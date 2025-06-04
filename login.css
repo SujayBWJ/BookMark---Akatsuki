@@ -1,220 +1,261 @@
+/* Import Google Fonts - Montserrat font family with multiple weights */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 
+/* Universal selector - applies to all elements */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  margin: 0; /* Remove default margins from all elements */
+  padding: 0; /* Remove default padding from all elements */
+  box-sizing: border-box; /* Include padding and border in element's total width/height */
+  font-family: "Montserrat", sans-serif; /* Set Montserrat as the default font for all elements */
 }
 
+/* Body element styling */
 body {
-  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 100vh;
+  background: linear-gradient(
+    to right,
+    #e2e2e2,
+    #c9d6ff
+  ); /* Light gray to light blue gradient background */
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  flex-direction: column; /* Stack flex items vertically */
+  height: 100vh; /* Set height to full viewport height */
 }
 
+/* Main container styling */
 .container {
-  background-color: #fff;
-  border-radius: 30px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-  position: relative;
-  overflow: hidden;
-  width: 110vw;
+  background-color: #fff; /* White background color */
+  /* border-radius: 30px; */ /* Commented out - would add rounded corners */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35); /* Drop shadow with 35% opacity black */
+  position: relative; /* Enable positioning for child elements */
+  overflow: hidden; /* Hide content that extends beyond container boundaries */
+  width: 110vw; /* Set width to 110% of viewport width */
   max-width: 1700px;
-  height: 90vh;
+  height: 100vh; /* Set height to full viewport height */
 }
 
 /* Typography */
+/* Paragraph styling within container */
 .container p {
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.3px;
-  margin: 20px 0;
+  font-size: 14px; /* Set font size to 14 pixels */
+  line-height: 20px; /* Set line height to 20 pixels */
+  letter-spacing: 0.3px; /* Add slight spacing between letters */
+  margin: 20px 0; /* Add 20px margin top and bottom, 0 left and right */
 }
 
+/* Span element styling within container */
 .container span {
-  font-size: 12px;
+  font-size: 12px; /* Set font size to 12 pixels */
 }
 
+/* Link styling within container */
 .container a {
-  color: #333;
-  font-size: 13px;
-  text-decoration: none;
-  margin: 15px 0 10px;
+  color: #333; /* Dark gray text color */
+  font-size: 13px; /* Set font size to 13 pixels */
+  text-decoration: none; /* Remove underline from links */
+  margin: 15px 0 10px; /* 15px top margin, 0 left/right, 10px bottom */
 }
 
 /* Buttons */
+/* Button styling within container */
 .container button {
-  background-color: hsl(231, 69%, 60%);
-  color: #fff;
-  font-size: 12px;
-  padding: 10px 45px;
-  border: 1px solid transparent;
-  border-radius: 8px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  margin-top: 10px;
-  cursor: pointer;
-  transition: 0.3s ease;
+  background-color: hsl(231, 69%, 60%); /* Blue background using HSL color */
+  color: #fff; /* White text color */
+  font-size: 12px; /* Set font size to 12 pixels */
+  padding: 10px 45px; /* 10px top/bottom padding, 45px left/right padding */
+  border: 1px solid transparent; /* Transparent border, 1px width */
+  border-radius: 8px; /* Rounded corners with 8px radius */
+  font-weight: 600; /* Semi-bold font weight */
+  letter-spacing: 0.5px; /* Add spacing between letters */
+  text-transform: uppercase; /* Convert text to uppercase */
+  margin-top: 10px; /* Add 10px margin at the top */
+  cursor: pointer; /* Show pointer cursor on hover */
+  transition: 0.3s ease; /* Smooth transition for all properties over 0.3 seconds */
 }
 
+/* Button hover state and signin hover state */
 .container button:hover,
 .signin:hover {
-  background-color: transparent;
-  color: hsl(231, 69%, 60%);
-  border: 2px solid hsl(231, 69%, 60%);
+  background-color: transparent; /* Remove background color on hover */
+  color: hsl(231, 69%, 60%); /* Change text color to blue on hover */
+  border: 2px solid hsl(231, 69%, 60%); /* Add blue border on hover */
 }
 
+/* Hidden button variant */
 .container button.hidden {
-  background-color: transparent;
-  border-color: #fff;
+  background-color: transparent; /* Transparent background */
+  border-color: #fff; /* White border color */
 }
 
 /* Forms */
+/* Form styling within container */
 .container form {
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0 40px;
-  height: 100%;
+  background-color: #fff; /* White background color */
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  flex-direction: column; /* Stack flex items vertically */
+  padding: 0 40px; /* No top/bottom padding, 40px left/right padding */
+  height: 100%; /* Set height to 100% of parent */
 }
 
+/* Input field styling within container */
 .container input {
-  background-color: #eee;
-  border: none;
-  margin: 8px 0;
-  padding: 10px 15px;
-  font-size: 13px;
-  border-radius: 8px;
-  width: 100%;
-  outline: none;
+  background-color: #eee; /* Light gray background */
+  border: none; /* Remove default border */
+  margin: 8px 0; /* 8px top/bottom margin, 0 left/right */
+  padding: 10px 15px; /* 10px top/bottom padding, 15px left/right padding */
+  font-size: 13px; /* Set font size to 13 pixels */
+  border-radius: 8px; /* Rounded corners with 8px radius */
+  width: 100%; /* Full width of parent container */
+  outline: none; /* Remove focus outline */
 }
 
 /* Form Container */
+/* Base form container positioning */
 .form-container {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  transition: all 0.6s ease-in-out;
+  position: absolute; /* Absolute positioning relative to container */
+  top: 0; /* Position at top of container */
+  height: 100%; /* Full height of parent */
+  transition: all 0.6s ease-in-out; /* Smooth transition for all properties */
 }
 
+/* Sign-in form positioning */
 .sign-in {
-  left: 0;
-  width: 50%;
-  z-index: 2;
+  left: 0; /* Position at left edge */
+  width: 50%; /* Half the width of parent */
+  z-index: 2; /* Layer above other elements */
 }
 
+/* Sign-in form when container is active */
 .container.active .sign-in {
-  transform: translateX(100%);
+  transform: translateX(100%); /* Move 100% to the right */
 }
 
+/* Sign-up form positioning */
 .sign-up {
-  left: 0;
-  width: 50%;
-  opacity: 0;
-  z-index: 1;
+  left: 0; /* Position at left edge */
+  width: 50%; /* Half the width of parent */
+  opacity: 0; /* Initially invisible */
+  z-index: 1; /* Layer below sign-in form */
 }
 
+/* Sign-up form when container is active */
 .container.active .sign-up {
-  transform: translateX(100%);
-  opacity: 1;
-  z-index: 5;
-  animation: move 0.6s;
+  transform: translateX(100%); /* Move 100% to the right */
+  opacity: 1; /* Make visible */
+  z-index: 5; /* Bring to front layer */
+  animation: move 0.6s; /* Apply move animation over 0.6 seconds */
 }
 
+/* Keyframe animation for sign-up form visibility */
 @keyframes move {
-  0%, 49.99% {
-    opacity: 0;
-    z-index: 1;
+  0%, /* At start of animation */
+  49.99% {
+    /* Until just before halfway point */
+    opacity: 0; /* Keep invisible */
+    z-index: 1; /* Keep in back layer */
   }
-  50%, 100% {
-    opacity: 1;
-    z-index: 5;
+  50%, /* From halfway point */
+  100% {
+    /* To end of animation */
+    opacity: 1; /* Make visible */
+    z-index: 5; /* Bring to front layer */
   }
 }
 
 /* Social Icons */
+/* Social icons container */
 .social-icons {
-  margin: 20px 0;
+  margin: 20px 0; /* 20px top/bottom margin, 0 left/right */
 }
 
+/* Individual social icon links */
 .social-icons a {
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 5px;
-  width: 40px;
-  height: 40px;
+  border: 1px solid #ccc; /* Light gray border, 1px width */
+  border-radius: 50%; /* Make circular */
+  display: inline-flex; /* Inline flexbox display */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  margin: 0 5px; /* No top/bottom margin, 5px left/right */
+  width: 40px; /* Set width to 40 pixels */
+  height: 40px; /* Set height to 40 pixels */
 }
 
 /* Toggle Panels */
+/* Toggle container positioning and styling */
 .toggle-container {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 50%;
-  height: 100%;
-  overflow: hidden;
-  transition: all 0.6s ease-in-out;
-  border-radius: 150px 0 0 100px;
-  z-index: 1000;
+  position: absolute; /* Absolute positioning */
+  top: 0; /* Position at top */
+  left: 50%; /* Start at horizontal center */
+  width: 50%; /* Half the width of parent */
+  height: 100%; /* Full height of parent */
+  overflow: hidden; /* Hide overflowing content */
+  transition: all 0.6s ease-in-out; /* Smooth transition for all properties */
+  border-radius: 150px 0 0 100px; /* Rounded left corners */
+  z-index: 1000; /* High z-index to stay on top */
 }
 
+/* Toggle container when main container is active */
 .container.active .toggle-container {
-  transform: translateX(-100%);
-  border-radius: 0 150px 100px 0;
+  transform: translateX(-100%); /* Move completely to the left */
+  border-radius: 0 150px 100px 0; /* Rounded right corners */
 }
 
+/* Toggle background and positioning */
 .toggle {
-  background: linear-gradient(to right, hsl(231, 69%, 60%), hsl(231, 69%, 60%));
-  color: #fff;
-  position: relative;
-  left: -100%;
-  width: 200%;
-  height: 100%;
-  transform: translateX(0);
-  transition: all 0.6s ease-in-out;
+  background: linear-gradient(
+    to right,
+    hsl(231, 69%, 60%),
+    hsl(231, 69%, 60%)
+  ); /* Blue gradient background */
+  color: #fff; /* White text color */
+  position: relative; /* Relative positioning */
+  left: -100%; /* Move completely to the left */
+  width: 200%; /* Double the width to accommodate both panels */
+  height: 100%; /* Full height */
+  transform: translateX(0); /* No initial transform */
+  transition: all 0.6s ease-in-out; /* Smooth transition for all properties */
 }
 
+/* Toggle when main container is active */
 .container.active .toggle {
-  transform: translateX(50%);
+  transform: translateX(50%); /* Move 50% to the right */
 }
 
+/* Base toggle panel styling */
 .toggle-panel {
-  position: absolute;
-  top: 0;
-  width: 50%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0 30px;
-  text-align: center;
-  transition: all 0.6s ease-in-out;
+  position: absolute; /* Absolute positioning */
+  top: 0; /* Position at top */
+  width: 50%; /* Half the width of toggle */
+  height: 100%; /* Full height */
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  flex-direction: column; /* Stack items vertically */
+  padding: 0 30px; /* No top/bottom padding, 30px left/right */
+  text-align: center; /* Center-align text */
+  transition: all 0.6s ease-in-out; /* Smooth transition for all properties */
 }
 
+/* Left toggle panel positioning */
 .toggle-left {
-  transform: translateX(-200%);
+  transform: translateX(-200%); /* Move completely off-screen to the left */
 }
 
+/* Left toggle panel when container is active */
 .container.active .toggle-left {
-  transform: translateX(0);
+  transform: translateX(0); /* Move to normal position */
 }
 
+/* Right toggle panel positioning */
 .toggle-right {
-  right: 0;
-  transform: translateX(0);
+  right: 0; /* Position at right edge */
+  transform: translateX(0); /* No initial transform */
 }
 
+/* Right toggle panel when container is active */
 .container.active .toggle-right {
-  transform: translateX(200%);
+  transform: translateX(200%); /* Move completely off-screen to the right */
 }
