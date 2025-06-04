@@ -26,7 +26,7 @@ body {
 /* Main container styling */
 .container {
   background-color: #fff; /* White background color */
-  /* border-radius: 30px; */ /* Commented out - would add rounded corners */
+   border-radius: 30px; /* Adds rounded corners */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35); /* Drop shadow with 35% opacity black */
   position: relative; /* Enable positioning for child elements */
   overflow: hidden; /* Hide content that extends beyond container boundaries */
