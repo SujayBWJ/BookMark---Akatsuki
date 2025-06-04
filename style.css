@@ -1,335 +1,567 @@
+/* Import Google Fonts - Poppins font family with various weights (100-700) */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap");
 
+/* Universal selector - applies to all elements on the page */
 * {
+  /* Set font family to Poppins with fallback to generic sans-serif */
   font-family: "Poppins", sans-serif;
+  /* Remove default margin from all elements */
   margin: 0;
+  /* Remove default padding from all elements */
   padding: 0;
+  /* Include padding and border in element's total width and height */
   box-sizing: border-box;
+  /* Remove default outline (focus indicators) */
   outline: none;
+  /* Remove default borders from all elements */
   border: none;
+  /* Capitalize the first letter of each word */
   text-transform: capitalize;
+  /* Smooth transition effect for all property changes over 0.2 seconds */
   transition: 0.2s ease-in-out;
+  /* Set default text color to black */
   color: #000;
+  /* Remove underlines from all text (affects links) */
   text-decoration: none;
 }
 
+/* CSS Custom Properties (variables) defined in the root element */
 :root {
+  /* Define a soft blue color using HSL values */
   --Soft-Blue: hsl(231, 69%, 60%);
+  /* Define a soft red color using HSL values */
   --Soft-Red: hsl(0, 94%, 66%);
+  /* Define a grayish blue color using HSL values */
   --Grayish-Blue: hsl(229, 8%, 60%);
+  /* Define a very dark blue color using HSL values */
   --Very-Dark-Blue: hsl(229, 31%, 21%);
+  /* Define a box shadow using the soft blue color */
   --box-shadow: 0.5rem 0.5rem 0 var(--Soft-Blue);
+  /* Define a text shadow with semi-transparent black */
   --text-shadow: 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.2);
 }
 
+/* Style for selected text on the page */
 ::selection {
+  /* Set background color of selected text to soft red */
   background-color: var(--Soft-Red);
+  /* Set text color of selected text to white */
   color: #fff;
 }
 
+/* Style for webkit-based browser scrollbars (Chrome, Safari, Edge) */
 ::-webkit-scrollbar {
+  /* Set scrollbar width to 12 pixels */
   width: 12px;
 }
 
+/* Style for the draggable part of webkit scrollbars */
 ::-webkit-scrollbar-thumb {
+  /* Set scrollbar thumb color to soft blue */
   background-color: var(--Soft-Blue);
 }
 
+/* Root HTML element styles */
 html {
+  /* Set base font size to 62.5% (10px if default is 16px) for easier rem calculations */
   font-size: 62.5%;
+  /* Enable smooth scrolling when clicking anchor links */
   scroll-behavior: smooth;
+  /* Hide horizontal scrollbar to prevent horizontal scrolling */
   overflow-x: hidden;
 }
 
+/* Generic section styling */
 section {
+  /* Add padding: 2rem top/bottom, 9% left/right */
   padding: 2rem 9%;
 }
 
+/* Styling for heading elements with class "heading" */
 .heading {
+  /* Center align text within heading */
   text-align: center;
+  /* Set font size to 2rem (20px) */
   font-size: 2rem;
+  /* Set text color to very dark blue variable */
   color: var(--Very-Dark-Blue);
+  /* Add margin: 10rem top, 0 left/right, 5rem bottom */
   margin: 10rem 0 5rem;
 }
 
+/* Style h1 elements inside .heading */
 .heading h1 {
+  /* Add bottom padding of 2rem */
   padding-bottom: 2rem;
 }
 
+/* Style paragraph elements inside .heading */
 .heading p {
+  /* Set maximum width to 60rem */
   max-width: 60rem;
+  /* Center the paragraph horizontally */
   margin: auto;
+  /* Set text color to grayish blue variable */
   color: var(--Grayish-Blue);
+  /* Set font size to 1.7rem (17px) */
   font-size: 1.7rem;
 }
 
+/* General button styling class */
 .all-btn {
+  /* Add padding: 1rem top/bottom, 3rem left/right */
   padding: 1rem 3rem;
+  /* Set font size to 1.5rem (15px) */
   font-size: 1.5rem;
+  /* Set background color to soft blue variable */
   background-color: var(--Soft-Blue);
+  /* Round corners with 0.5rem radius */
   border-radius: 0.5rem;
+  /* Set text color to white */
   color: #fff;
 }
 
+/* Hover state for general buttons */
 .all-btn:hover {
+  /* Make background transparent on hover */
   background-color: transparent;
+  /* Change text color to soft blue on hover */
   color: var(--Soft-Blue);
+  /* Add a 2px solid border with soft blue color */
   border: 2px solid var(--Soft-Blue);
 }
 
+/* Header/Navigation Styles Comment */
 /* Navbar Styles */
+
+/* Main header container styling */
 .header {
+  /* Add padding: 3rem top/bottom, 9% left/right */
   padding: 3rem 9%;
+  /* Use flexbox layout */
   display: flex;
+  /* Space items apart (logo left, nav right) */
   justify-content: space-between;
+  /* Center items vertically */
   align-items: center;
+  /* Fix position to viewport */
   position: fixed;
+  /* Position at top of viewport */
   top: 0;
+  /* Extend from left edge */
   left: 0;
+  /* Extend to right edge */
   right: 0;
+  /* Set high z-index to appear above other elements */
   z-index: 10000;
+  /* Set background color to white */
   background-color: #fff;
+  /* Add subtle shadow below header */
   box-shadow: 0rem 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
 }
 
+/* Logo styling within header */
 .header .logo {
+  /* Show pointer cursor on hover */
   cursor: pointer;
 }
 
+/* Navigation link styling */
 .header .navbar a {
+  /* Add left margin for spacing between links */
   margin-left: 2rem;
+  /* Set font size to 1.7rem (17px) */
   font-size: 1.7rem;
+  /* Transform text to uppercase */
   text-transform: uppercase;
 }
 
+/* Hover state for navigation links */
 .header .navbar a:hover {
+  /* Change color to soft red on hover */
   color: var(--Soft-Red);
 }
 
+/* Special button styling within navbar */
 .header .navbar .btn {
+  /* Add padding: 0.6rem top/bottom, 3rem left/right */
   padding: 0.6rem 3rem;
+  /* Set background to soft red */
   background-color: var(--Soft-Red);
+  /* Set text color to white */
   color: #fff;
+  /* Round corners */
   border-radius: 0.5rem;
 }
 
+/* Hover state for navbar button */
 .header .navbar .btn:hover {
+  /* Change text color to soft red */
   color: var(--Soft-Red);
+  /* Make background transparent */
   background-color: transparent;
+  /* Add border with soft red color */
   border: 2px solid var(--Soft-Red);
 }
 
+/* Mobile menu button styling */
 #menu-btn {
+  /* Add padding around the button */
   padding: 1rem;
+  /* Set light gray background */
   background-color: #eee;
+  /* Set large font size for hamburger icon */
   font-size: 3rem;
+  /* Set color to soft blue */
   color: var(--Soft-Blue);
+  /* Round corners */
   border-radius: 0.5rem;
+  /* Show pointer cursor */
   cursor: pointer;
+  /* Hide by default (shown only on mobile) */
   display: none;
 }
 
+/* Home Section Comment */
 /* Home Section */
+
+/* Home section container styling */
 .home {
+  /* Add top padding to account for fixed header */
   padding-top: 15rem;
+  /* Use flexbox layout */
   display: flex;
+  /* Center items vertically */
   align-items: center;
+  /* Allow items to wrap to new lines */
   flex-wrap: wrap;
+  /* Add gap between flex items */
   gap: 1.5rem;
 }
 
+/* Home section image container */
 .home .image {
+  /* Flex: grow=1, shrink=1, basis=45rem */
   flex: 1 1 45rem;
 }
 
+/* Image within home section */
 .home .image img {
+  /* Make image full width of container */
   width: 100%;
+  /* Add top margin */
   margin-top: 5rem;
 }
 
+/* Home section content container */
 .home .content {
+  /* Flex: grow=1, shrink=1, basis=45rem */
   flex: 1 1 45rem;
 }
 
+/* Main heading in home content */
 .home .content h1 {
+  /* Set large font size */
   font-size: 4.5rem;
+  /* Add bottom padding */
   padding-bottom: 1rem;
+  /* Set color to very dark blue */
   color: var(--Very-Dark-Blue);
 }
 
+/* Paragraph in home content */
 .home .content p {
+  /* Set font size */
   font-size: 1.7rem;
+  /* Add padding: 1rem top, 0 left/right, 4rem bottom */
   padding: 1rem 0 4rem;
+  /* Set maximum width */
   max-width: 40rem;
+  /* Set color to grayish blue */
   color: var(--Grayish-Blue);
 }
 
+/* Special button styling in home section */
 .home .content .home-btn {
+  /* Add padding */
   padding: 1.3rem 2rem;
+  /* Set white background */
   background-color: #fff;
+  /* Set black text color */
   color: #000;
+  /* Set font size */
   font-size: 1.4rem;
+  /* Add blue box shadow */
   box-shadow: 0.5rem 0.5rem var(--Soft-Blue);
+  /* Add blue border */
   border: 2px solid var(--Soft-Blue);
+  /* Round corners */
   border-radius: 0.5rem;
 }
 
+/* Hover state for home button */
 .home .content .home-btn:hover {
+  /* Change background to soft blue */
   background-color: var(--Soft-Blue);
+  /* Remove box shadow */
   box-shadow: none;
+  /* Change text to white */
   color: #fff;
 }
 
+/* Features Section Comment */
 /* Features Section */
+
+/* Features section row styling */
 .features .row {
+  /* Use flexbox layout */
   display: flex;
+  /* Center items vertically */
   align-items: center;
+  /* Allow wrapping */
   flex-wrap: wrap;
+  /* Large gap between items */
   gap: 5rem;
+  /* Add vertical margin */
   margin: 3rem 0;
 }
 
+/* Image and content containers in features row */
 .features .row .image,
 .features .row .content {
+  /* Flex: grow=1, shrink=1, basis=45rem */
   flex: 1 1 45rem;
 }
 
+/* Images in features section */
 .features .row .image img {
+  /* Full width images */
   width: 100%;
 }
 
+/* Headings in features content */
 .features .row .content h1 {
+  /* Large font size */
   font-size: 4rem;
+  /* Vertical padding */
   padding: 1rem 0;
+  /* Dark blue color */
   color: var(--Very-Dark-Blue);
 }
 
+/* Paragraphs in features content */
 .features .row .content p {
+  /* Standard font size */
   font-size: 1.7rem;
+  /* Padding with large bottom margin */
   padding: 1rem 0 4rem;
+  /* Grayish blue color */
   color: var(--Grayish-Blue);
 }
 
+/* Download Section Comment */
 /* Download Section */
+
+/* Download section container using CSS Grid */
 .download .box-container {
+  /* Use CSS Grid layout */
   display: grid;
+  /* Gap between grid items */
   gap: 4rem;
+  /* Responsive grid: auto-fit columns, min 20rem, max 1fr */
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  /* Vertical padding */
   padding: 5rem 0;
 }
 
+/* Individual download boxes */
 .download .box {
+  /* Blue border */
   border: 2px solid var(--Soft-Blue);
+  /* Custom box shadow variable */
   box-shadow: var(--box-shadow);
+  /* Rounded corners */
   border-radius: 0.5rem;
+  /* Center text */
   text-align: center;
+  /* Internal padding */
   padding: 2.5rem;
 }
 
+/* Hover state for download boxes */
 .download .box:hover {
+  /* Remove box shadow on hover */
   box-shadow: none;
 }
 
+/* Headings in download boxes */
 .download .box h3 {
+  /* Font size */
   font-size: 2rem;
+  /* Vertical padding */
   padding: 1rem 0;
+  /* Dark blue color */
   color: var(--Very-Dark-Blue);
 }
 
+/* Paragraphs in download boxes */
 .download .box p {
+  /* Font size */
   font-size: 1.7rem;
+  /* Bottom padding */
   padding-bottom: 2.5rem;
+  /* Grayish blue color */
   color: var(--Grayish-Blue);
 }
 
+/* Footer Section Comment */
 /* Footer Section */
+
+/* Footer container using CSS Grid */
 .footer .box-container {
+  /* CSS Grid layout */
   display: grid;
+  /* Responsive columns: auto-fit, min 22rem, max 1fr */
   grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  /* Gap between grid items */
   gap: 2rem;
 }
 
+/* Footer box headings */
 .footer .box-container .box h3 {
+  /* Large font size */
   font-size: 2.5rem;
+  /* Black text color */
   color: #000;
+  /* Vertical padding */
   padding: 1rem 0;
 }
 
+/* Footer box links */
 .footer .box-container .box a {
+  /* Display as block elements (stack vertically) */
   display: block;
+  /* Font size */
   font-size: 1.5rem;
+  /* Grayish blue color */
   color: var(--Grayish-Blue);
+  /* Vertical padding */
   padding: 1rem 0;
 }
 
+/* Icons within footer links */
 .footer .box-container .box a i {
+  /* Right padding for spacing */
   padding-right: 0.5rem;
+  /* Blue color for icons */
   color: var(--Soft-Blue);
 }
 
+/* Hover effect for icons in footer links */
 .footer .box-container .box a:hover i {
+  /* Increase right padding on hover */
   padding-right: 1rem;
 }
 
+/* Footer credit/copyright section */
 .footer .credit {
+  /* Padding: 2rem top, 1rem left/right, 1rem bottom */
   padding: 2rem 1rem 1rem;
+  /* Center text */
   text-align: center;
+  /* Font size */
   font-size: 2rem;
+  /* Black text */
   color: #000;
+  /* Top border with semi-transparent black */
   border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
 }
 
+/* Span elements within footer credit */
 .footer .credit span {
+  /* Soft red color */
   color: var(--Soft-Red);
+  /* Pointer cursor indicating clickable */
   cursor: pointer;
 }
 
+/* Utility Comment */
 /* Utility */
+
+/* Utility class for blue text */
 .bm {
+  /* Soft blue text color */
   color: var(--Soft-Blue);
 }
 
+/* Media Queries Comment */
 /* Media Queries */
+
+/* Tablet and smaller desktop screens (max-width: 991px) */
 @media (max-width: 991px) {
+  /* Reduce base font size */
   html {
     font-size: 55%;
   }
+  /* Reduce header padding */
   .header {
     padding: 2rem;
   }
 }
 
+/* Mobile and tablet screens (max-width: 768px) */
 @media (max-width: 768px) {
+  /* Show mobile menu button */
   #menu-btn {
     display: initial;
   }
 
+  /* Mobile navigation menu styling */
   .header .navbar {
+    /* Position absolutely relative to header */
     position: absolute;
+    /* Position below header */
     top: 115%;
+    /* Align to right */
     right: 2rem;
+    /* Add custom box shadow */
     box-shadow: var(--box-shadow);
+    /* Set fixed width */
     width: 33rem;
+    /* Round corners */
     border-radius: 0.5rem;
+    /* Blue border */
     border: 2px solid var(--Soft-Blue);
+    /* White background */
     background-color: #fff;
+    /* Initially scaled to 0 (hidden) */
     transform: scale(0);
+    /* Transform from top-right corner */
     transform-origin: top right;
   }
 
+  /* Active state for mobile navigation */
   .header .navbar.active {
+    /* Scale to normal size (show menu) */
     transform: scale(1);
   }
 
+  /* Mobile navigation links */
   .header .navbar a {
+    /* Add margin around links */
     margin: 2.5rem;
+    /* Center text */
     text-align: center;
+    /* Display as block elements (stack vertically) */
     display: block;
+    /* Larger font size for mobile */
     font-size: 2rem;
   }
 }
 
+/* Small mobile screens (max-width: 450px) */
 @media (max-width: 450px) {
+  /* Further reduce base font size */
   html {
     font-size: 50%;
   }
